@@ -1,0 +1,34 @@
+package programOnArray;
+/*37. Remove All Spaces from a String
+Description: Remove all spaces from a string.
+
+
+Input: "hello world"
+
+
+Output: "helloworld"*/
+
+import java.util.*;
+public class Q37_Remove_All_Spaces_from_a_String {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the String");
+		String s=sc.nextLine();
+		
+		char ch[]=s.toCharArray();
+		
+		String str="";
+		for (int i = 0; i < ch.length; i++) {
+			if(ch[i]!=' ') {
+				str+=ch[i];
+			}
+		}
+		
+		System.out.println(str);
+		
+	}
+
+}
